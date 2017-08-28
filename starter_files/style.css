@@ -14,6 +14,9 @@
     1100px
 
 */
+
+/*Setting the media for a browser that has maximum width to 1100px*/
+@media (min-width: 700px){
 body{
     font-family: Palatino, Times, serif;
     background-color: #ddffdd;
@@ -104,37 +107,83 @@ div{
 
 #site_footer nav a{
   margin: 10px;}
-
-
-/*Setting the media for a browser that has minimum width to 600px*/
-@media (min-width: 600px){
-
-#site_container{
-  /*display: flex;
-  flex-flow: column wrap;*/
 }
 
-#logo{
-  /*flex-wrap: wrap;*/
-}
 
-#main_nav{
+/*Setting the media for a browser that has maximum width to 600px*/
+@media (max-width: 2200px){
+  body{
+    font-family: Palatino, Times, serif;
+    background-color: #ddffdd;
+    margin: 20px;
+    font-size: 14px;
+    line-height: 1.6;}
 
-}
+  ul{
+    padding-left: 20px;
+    margin-top: 0;}
 
-header{
-  /*display: flex;
-  flex-flow: column wrap; */
-}
+  h1, h2, h3{
+    color: #009999;}
 
-#main_content{
-  /*display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;*/
-}
+  h2, h3{
+    margin-bottom: 0;}
 
-#main_content div{
-  display: flex;
-  flex-direction: column;
-}
+  a{
+    font-weight: bold;
+    color: red;
+    text-decoratßion: none;}
+
+  a:hover{
+    color: blue;}
+
+  header{
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddddff;}
+
+  #logo{
+    text-align: center;
+  }
+
+  #site_container{
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+  }
+
+  #main_nav{
+    text-align: center;}
+
+  #main_nav a{
+    display: block;
+    padding: 10px 2%;
+    background: #ffdddd;ß
+    margin-bottom: 5px;
+    border-radius: 5px;}
+
+  #main_nav a:hover{
+    background: #ddddff;}
+
+  #main_content{
+    background-color: #ddffff;
+  }
+
+  #sidebar_content{
+    background-color: #ffffdd;
+    padding: 10px;
+  }
+
+  #site_footer{
+    background-color: sandybrown;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+  a{
+    padding: 5px;}
 }
